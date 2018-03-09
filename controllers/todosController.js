@@ -23,8 +23,12 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
+    console.log("update " + req.body.id);
+    console.log("This is id" + Object.keys(req.params));
+
     db.Todo
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      .findOneAndUpdate({ _id: req.body.id }, req.body)
+
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

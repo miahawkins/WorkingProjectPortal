@@ -4,7 +4,7 @@ import '../../index.css';
 import API from "../../utils/API";
 import Nav from "../Nav";
 import Wrapper from "../Wrapper";
-import TodoItem from '../TodoItem/TodoItem';
+import TodoItem from '../TodoItem';
 import TodoList from '../TodoList/TodoList';
 import TodoForm from '../TodoForm/TodoForm';
 import Footer from "../Footer";
@@ -71,9 +71,8 @@ class Todo extends Component {
 
   render() {
     return (
-      
       <div className="App">
-        <Nav />
+        
         <Wrapper>
           <TodoForm 
             addTodo= { this.addTodo}
@@ -84,9 +83,8 @@ class Todo extends Component {
               removeTodo={ this.removeTodo }
            /> 
         </Wrapper>
-        <Footer />
+       
       </div>
-      
     );
   }
 }
