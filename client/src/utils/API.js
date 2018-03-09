@@ -17,6 +17,12 @@ export default {
   },
   // Saves a todo to the database
   saveTodo: function(todoData) {
+
     return axios.post("/api/todos", todoData);
+  },
+  
+  updateTodo: function(newTodo) {
+    console.log(newTodo);
+    return axios.put("/api/todos/", newTodo);
   }
 };
