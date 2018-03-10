@@ -1,18 +1,15 @@
 import React from 'react';
 import Nav from "../Nav";
 import Footer from "../Footer";
-import "./index.css";
 
-
-
-const LandingPage = () =>
+const Calendar = () =>
   <div>
     <Nav />
     
-    <h1>Landing</h1>
-    <p>Please Sign in or Sign up</p>
+    <h1>Calendar</h1>
+    <p>This is a future scheduling app.</p>
     
     <Footer />
   </div>
 
-export default LandingPage;
+export default Calendar;

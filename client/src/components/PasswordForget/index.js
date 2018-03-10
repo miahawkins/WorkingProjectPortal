@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
+import Nav from "../Nav";
+import Footer from "../Footer";
 
 const PasswordForgetPage = () =>
   <div>
@@ -49,6 +50,8 @@ class PasswordForgetForm extends Component {
     const isInvalid = email === '';
 
     return (
+      <div>
+        <Nav />
       <form onSubmit={this.onSubmit}>
         <input
           value={this.state.email}
@@ -62,6 +65,8 @@ class PasswordForgetForm extends Component {
 
         { error && <p>{error.message}</p> }
       </form>
+      <Footer />
+      </div>
     );
   }
 }

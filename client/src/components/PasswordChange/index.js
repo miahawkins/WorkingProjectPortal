@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-
 import { auth } from '../../firebase';
+import Nav from "../Nav";
+import Footer from "../Footer";
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value,
@@ -45,6 +46,8 @@ class PasswordChangeForm extends Component {
       passwordOne === '';
 
     return (
+      <div>
+        <Nav />
       <form onSubmit={this.onSubmit}>
         <input
           value={passwordOne}
@@ -64,6 +67,8 @@ class PasswordChangeForm extends Component {
 
         { error && <p>{error.message}</p> }
       </form>
+      <Footer />
+      </div>
     );
   }
 }

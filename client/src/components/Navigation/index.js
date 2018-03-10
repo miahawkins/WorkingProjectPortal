@@ -18,18 +18,14 @@ Navigation.contextTypes = {
 };
 
 const NavigationAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.HOME}>Home</Link></li>
-    <li><Link to={routes.ACCOUNT}>Account</Link></li>
-    <li><Link to={routes.TODO}>To Do App</Link></li>
-    <li><SignOutButton /></li>
-  </ul>
+  <div>
+    <p><Link to={routes.LANDING}>Landing</Link> | <Link to={routes.HOME}>Home</Link> | <Link to={routes.ACCOUNT}>Account</Link> | <Link to={routes.TODO}>To Do App</Link> | <Link to={routes.CALENDAR}>Schedule App</Link> | <Link to={routes.EXCEL}>Excel App</Link></p>
+    <p><SignOutButton /></p>
+  </div>
 
 const NavigationNonAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
-  </ul>
+  <div>
+    <p><Link to={routes.LANDING}>Landing</Link> | <Link to={routes.SIGN_IN}>Sign In</Link></p>
+  </div>
 
 export default Navigation;

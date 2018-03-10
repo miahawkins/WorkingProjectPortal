@@ -7,7 +7,6 @@ import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
 import Nav from "../Nav";
 import Footer from "../Footer";
-import Navigation from "../Navigation";
 
 const SignInPage = ({ history }) =>
   <div>
@@ -70,7 +69,6 @@ class SignInForm extends Component {
     return (
       <div>
         <Nav />
-        <Navigation />
           <form onSubmit={this.onSubmit}>
             
             <input
