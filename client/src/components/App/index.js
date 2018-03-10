@@ -33,8 +33,6 @@ const App = () =>
       <Route exact path={routes.ACCOUNT} component={() => <AccountPage />} />
 
       <hr/>
-
-      <span>Kat and Mia </span> | <span> final project </span> | <span> The Project Portal</span>
     </div>
   </Router>
 
