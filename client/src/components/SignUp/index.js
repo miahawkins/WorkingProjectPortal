@@ -7,7 +7,6 @@ import { auth, db } from '../../firebase';
 import * as routes from '../../constants/routes';
 import Nav from "../Nav";
 import Footer from "../Footer";
-import Navigation from "../Navigation";
 
 const SignUpPage = ({ history }) =>
   <div>
@@ -84,7 +83,6 @@ class SignUpForm extends Component {
     return (
       <div>
         <Nav />
-          <Navigation />
           <form onSubmit={this.onSubmit}>
             <input
               value={username}

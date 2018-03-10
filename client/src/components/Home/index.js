@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./index.css";
 import withAuthorization from '../Session/withAuthorization';
 import { db } from '../../firebase';
-import Navigation from "../Navigation";
 import Nav from "../Nav";
 import Footer from "../Footer";
 
@@ -38,7 +37,7 @@ class HomePage extends Component {
 const UserList = ({ users }) =>
   <div>
     <Nav />
-    <Navigation />
+    
     <h2>List of Usernames of Users</h2>
     <p>(Saved on Sign Up in Firebase Database)</p>
 

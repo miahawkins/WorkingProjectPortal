@@ -4,18 +4,6 @@ h1, h4 {
 }
 .navbar {
     background-color: #3e677e;
+    text-align: center;
+    padding: 20px;
 }
-
-.tabButton1 {
-    float: left;
-    margin-left: 5%;
-    border-radius: 4px;
-
-}
-
-.tabButton {
-    float: left;
-    margin-left: 1%;
-    border-radius: 4px;
-}
-

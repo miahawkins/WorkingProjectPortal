@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import '../../index.css';
 import API from "../../utils/API";
 import Wrapper from "../Wrapper";
-import TodoItem from '../TodoItem';
 import TodoList from '../TodoList/TodoList';
 import TodoForm from '../TodoForm/TodoForm';
 import Nav from "../Nav";
 import Footer from "../Footer";
-import Navigation from "../Navigation";
 
 class Todo extends Component {
   state = {
@@ -26,7 +23,7 @@ class Todo extends Component {
   }
 
   removeTodo = id => {
-    const todos = this.state.todos.filter(todo => todo._id != id);
+    const todos = this.state.todos.filter(todo => todo._id !== id);
     this.setState({ todos});
     API.deleteTodo(id)
       .then(res => this.loadTodos())
@@ -53,7 +50,7 @@ class Todo extends Component {
   }
 
   editTodo = ( id, queueTitle, description, dueDate ) => {
-    const todos = this.state.todos.filter(todo => todo._id != id);
+    const todos = this.state.todos.filter(todo => todo._id !== id);
     let newTodo = {
       "id": id,
       "queueTitle": queueTitle,
@@ -74,7 +71,6 @@ class Todo extends Component {
     return (
       <div className="App">
         <Nav />
-        <Navigation />
         <Wrapper>
           <TodoForm 
             addTodo= { this.addTodo}
