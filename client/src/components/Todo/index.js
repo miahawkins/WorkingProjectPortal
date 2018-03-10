@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import '../../index.css';
 import API from "../../utils/API";
-import Nav from "../Nav";
 import Wrapper from "../Wrapper";
 import TodoItem from '../TodoItem';
 import TodoList from '../TodoList/TodoList';
 import TodoForm from '../TodoForm/TodoForm';
+import Nav from "../Nav";
 import Footer from "../Footer";
+import Navigation from "../Navigation";
 
 class Todo extends Component {
   state = {
@@ -72,7 +73,8 @@ class Todo extends Component {
   render() {
     return (
       <div className="App">
-        
+        <Nav />
+        <Navigation />
         <Wrapper>
           <TodoForm 
             addTodo= { this.addTodo}
@@ -83,7 +85,7 @@ class Todo extends Component {
               removeTodo={ this.removeTodo }
            /> 
         </Wrapper>
-       
+       <Footer />
       </div>
     );
   }

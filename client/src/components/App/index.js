@@ -20,9 +20,9 @@ import './index.css';
 const App = () =>
   <Router>
     <div className="app">
-      <Navigation />
+      
 
-      <hr/>
+      
 
       <Route exact path={routes.LANDING} component={() => <LandingPage />} />
       <Route exact path={routes.SIGN_UP} component={() => <SignUpPage />} />
@@ -32,7 +32,7 @@ const App = () =>
       <Route exact path={routes.TODO} component={() => <Todo />} />
       <Route exact path={routes.ACCOUNT} component={() => <AccountPage />} />
 
-      <hr/>
+      
     </div>
   </Router>
 
