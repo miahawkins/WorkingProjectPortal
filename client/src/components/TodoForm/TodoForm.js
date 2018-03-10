@@ -19,7 +19,6 @@ class TodoForm extends Component {
         });
     };
     
-    // WE NEED TO ADD STUFF HERE!!! LIKE ADDING TO MONGODB ETC!!!!!!!
     // Handles what happens upon submitting
     toSubmit = (event) => {
         event.preventDefault();
@@ -30,14 +29,7 @@ class TodoForm extends Component {
         } 
         console.log("Calling addTodo");
         this.props.addTodo(this.state.queueTitle, this.state.description, this.state.dueDate);
-        // const description = this.state.description.trim();
-        // if(description) {
-        //     this.props.toSubmit(description);
-        // }
-
-        // Clear input form after submission
         this.clearInput();
-        
     };
 
     clearInput() {

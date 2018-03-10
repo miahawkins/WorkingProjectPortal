@@ -8,11 +8,9 @@ import Footer from "../Footer";
 
 const AccountPage = (props, { authUser }) =>
   <div>
-    <Nav />
     <h1>Account: {authUser.email}</h1>
     <PasswordForgetForm />
     <PasswordChangeForm />
-    <Footer />
   </div>
 
 AccountPage.contextTypes = {

@@ -25,9 +25,6 @@ class HomePage extends Component {
 
     return (
       <div>
-        <h1>Home</h1>
-        <p>The Home Page is accessible by every signed in user.</p>
-
         { !!users && <UserList users={users} /> }
       </div>
     );
@@ -37,13 +34,13 @@ class HomePage extends Component {
 const UserList = ({ users }) =>
   <div>
     <Nav />
+    <h2> Access Project Portal Apps below</h2>
+    <h3>If this site needs Editing contact the following:</h3>
     
-    <h2>List of Usernames of Users</h2>
-    <p>(Saved on Sign Up in Firebase Database)</p>
-
     {Object.keys(users).map(key =>
-      <div key={key}>{users[key].username}</div>
+      <div key={key}>{users[key].email}</div>
     )}
+    <br/><br/>
     <Footer />
   </div>
 

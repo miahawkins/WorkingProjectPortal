@@ -47,7 +47,6 @@ class PasswordChangeForm extends Component {
 
     return (
       <div>
-        <Nav />
       <form onSubmit={this.onSubmit}>
         <input
           value={passwordOne}
@@ -67,7 +66,6 @@ class PasswordChangeForm extends Component {
 
         { error && <p>{error.message}</p> }
       </form>
-      <Footer />
       </div>
     );
   }

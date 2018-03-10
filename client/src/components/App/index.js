@@ -14,16 +14,12 @@ import withAuthentication from '../Session/withAuthentication';
 import * as routes from '../../constants/routes';
 import Excel from '../Excel';
 import Calendar from '../Calendar';
-
 import './index.css';
 
 const App = () =>
   <Router>
     <div className="app">
       
-
-      
-
       <Route exact path={routes.LANDING} component={() => <LandingPage />} />
       <Route exact path={routes.SIGN_UP} component={() => <SignUpPage />} />
       <Route exact path={routes.SIGN_IN} component={() => <SignInPage />} />
@@ -34,7 +30,6 @@ const App = () =>
       <Route exact path={routes.EXCEL} component={() => <Excel />} />
       <Route exact path={routes.CALENDAR} component={() => <Calendar />} />
 
-      
     </div>
   </Router>
 
