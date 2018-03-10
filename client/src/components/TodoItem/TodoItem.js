@@ -1,7 +1,6 @@
 import React from "react";
 import "./TodoItem.css";
 
-
 const TodoItem = props => {
     return (
         <div className="todoitem">
@@ -15,9 +14,7 @@ const TodoItem = props => {
                     <button className="dButton" onClick={() => props.removeTodo(props.id)}>Delete</button>
                     <button className="eButton" onClick={() => props.editTodo()}>Edit</button>
                 </div>
-                
             </div>
-
         </div>
     );
 };
