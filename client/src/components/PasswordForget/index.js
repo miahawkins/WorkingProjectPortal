@@ -9,6 +9,7 @@ const PasswordForgetPage = () =>
   <div>
     <h1>PasswordForget</h1>
     <PasswordForgetForm />
+    
   </div>
 
 const updateByPropertyName = (propertyName, value) => () => ({
@@ -51,21 +52,21 @@ class PasswordForgetForm extends Component {
 
     return (
       <div>
-        <Nav />
-      <form onSubmit={this.onSubmit}>
-        <input
-          value={this.state.email}
-          onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
-          type="text"
-          placeholder="Email Address"
-        />
-        <button disabled={isInvalid} type="submit">
-          Reset My Password
-        </button>
+        
+          <form onSubmit={this.onSubmit}>
+            <input
+              value={this.state.email}
+              onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
+              type="text"
+              placeholder="Email Address"
+            />
+            <button disabled={isInvalid} type="submit">
+              Reset My Password
+            </button>
 
-        { error && <p>{error.message}</p> }
-      </form>
-      <Footer />
+            { error && <p>{error.message}</p> }
+          </form>
+        
       </div>
     );
   }
