@@ -13,6 +13,7 @@ const TodoItem = props => {
                     </div>
                     <button className="dButton" onClick={() => props.removeTodo(props.id)}>Delete</button>
                     <button className="eButton" onClick={() => props.editTodo()}>Edit</button>
+                    
                 </div>
             </div>
         </div>

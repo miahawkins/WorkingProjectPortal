@@ -2,6 +2,12 @@ button {
     border-radius: 4px;
 }
 
+.submitBTN {
+    background-color: #3e677e;
+    color: white;
+    font-size: 16px;
+}
+
 .todoform {
     border-radius: 5px;
     background-color: #f2f2f2;
