@@ -64,7 +64,7 @@ class TodoForm extends Component {
                     type="text"
                     placeholder="Due Date"
                 />
-                <button onClick={this.toSubmit}>Submit</button>
+                <button className="submitBTN" onClick={this.toSubmit}>Submit</button>
             </form>
         );
     }

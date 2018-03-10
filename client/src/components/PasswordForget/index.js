@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
-import Nav from "../Nav";
-import Footer from "../Footer";
 
 const PasswordForgetPage = () =>
   <div>
