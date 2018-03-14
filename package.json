@@ -9,6 +9,7 @@
     "express": "^4.15.4",
     "firebase": "^4.10.1",
     "mongoose": "^4.11.7",
+    "path": "^0.12.7",
     "prop-types": "^15.6.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
